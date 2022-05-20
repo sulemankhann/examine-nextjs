@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './fonts.css';
+
+@layer base {
+  h1 {
+    @apply font-serif text-mobile-h1;
+  }
+  h2 {
+    @apply font-serif text-mobile-h2;
+  }
+  h3 {
+    @apply font-serif text-mobile-h3;
+  }
+  h4 {
+    @apply font-serif text-mobile-h4;
+  }
+  h5 {
+    @apply font-serif text-mobile-h4;
+  }
+  h6 {
+    @apply font-serif text-mobile-h4;
+  }
+}
