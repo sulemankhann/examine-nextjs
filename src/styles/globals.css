@@ -6,21 +6,27 @@
 
 @layer base {
   h1 {
-    @apply font-serif text-mobile-h1;
+    @apply font-serif text-mobile-h1 lg:text-web-h1;
   }
   h2 {
-    @apply font-serif text-mobile-h2;
+    @apply font-serif text-mobile-h2 font-medium lg:text-web-h2;
   }
   h3 {
-    @apply font-serif text-mobile-h3;
+    @apply font-serif text-mobile-h3 lg:text-web-h3;
   }
   h4 {
-    @apply font-serif text-mobile-h4;
+    @apply font-serif text-mobile-h4 lg:text-web-h4;
   }
   h5 {
-    @apply font-serif text-mobile-h4;
+    @apply font-serif text-mobile-h4 lg:text-web-h5;
   }
   h6 {
-    @apply font-serif text-mobile-h4;
+    @apply font-serif text-mobile-h4 lg:text-web-h6;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }

@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack(config) {
+    // support svg
     config.module.rules.push({
       test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
+      use: [{ loader: '@svgr/webpack', options: { svgoConfig: { plugins: { removeViewBox: false } } } }],
     });
 
     return config;
