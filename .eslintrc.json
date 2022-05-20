@@ -1,0 +1,7 @@
+{
+  "extends": ["sznm/react", "plugin:react/jsx-runtime", "plugin:@next/next/recommended"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "react/prop-types": "off"
+  }
+}
